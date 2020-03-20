@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Covid-19 Widget</string>
+    <string name="appwidget_text">Covid-19 Indonesia</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="positif">Positif</string>
+    <string name="sembuh">Sembuh</string>
+    <string name="meninggal">Meninggal</string>
+</resources>

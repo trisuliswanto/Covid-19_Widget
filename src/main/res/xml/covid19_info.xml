@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialKeyguardLayout="@layout/covid19"
+    android:initialLayout="@layout/covid19"
+    android:minWidth="250dp"
+    android:minHeight="110dp"
+    android:previewImage="@drawable/indonesia_flag"
+    android:resizeMode="horizontal"
+    android:updatePeriodMillis="300000"
+    android:widgetCategory="home_screen|keyguard"></appwidget-provider>
