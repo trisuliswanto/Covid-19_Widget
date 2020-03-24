@@ -2,20 +2,29 @@ package com.trisuliswanto.covid19.Models;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.SerializedName;
+import com.google.gson.annotations.Expose;
 
 @Generated("com.robohorse.robopojogenerator")
 public class ResponseCovid19{
 
+	@SerializedName("lastupdate")
+	@Expose
+	private String lastupdate;
+
 	@SerializedName("meninggal")
+	@Expose
 	private String meninggal;
 
 	@SerializedName("positif")
+	@Expose
 	private String positif;
 
 	@SerializedName("sembuh")
+	@Expose
 	private String sembuh;
 
 	@SerializedName("name")
+	@Expose
 	private String name;
 
 	public void setMeninggal(String meninggal){
@@ -50,6 +59,14 @@ public class ResponseCovid19{
 		return name;
 	}
 
+	public String getLastupdate() {
+		return lastupdate;
+	}
+
+	public void setLastupdate(String lastupdate) {
+		this.lastupdate = lastupdate;
+	}
+
 	@Override
  	public String toString(){
 		return 
@@ -57,7 +74,8 @@ public class ResponseCovid19{
 			"meninggal = '" + meninggal + '\'' + 
 			",positif = '" + positif + '\'' + 
 			",sembuh = '" + sembuh + '\'' + 
-			",name = '" + name + '\'' + 
+			",name = '" + name + '\'' +
+			",lastupdate = '" + lastupdate + '\'' +
 			"}";
 		}
 }

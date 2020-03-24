@@ -5,6 +5,7 @@ package com.trisuliswanto.covid19.MyRetrofit;
  */
 
 import com.trisuliswanto.covid19.Models.ResponseCovid19;
+import com.trisuliswanto.covid19.Models.ResponseCovid19id;
 
 import java.util.List;
 
@@ -15,5 +16,8 @@ public interface ApiInterface {
 
     @GET("indonesia")
     Call<List<ResponseCovid19>> get_covid19_indonesia();
+
+    @GET("summary")
+    Call<ResponseCovid19id> get_covid19id_indonesia();
 
 }

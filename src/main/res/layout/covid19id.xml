@@ -14,19 +14,44 @@
         android:textSize="24sp"
         android:textStyle="bold|italic" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/last_updated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/spacing_medium"
+            android:text="..."
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/last_updated"
+            android:text="By: Jack Electronics"
+            android:textAlignment="textEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="110dp"
         android:orientation="horizontal"
         android:padding="@dimen/spacing_small">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="@dimen/spacing_small"
             android:layout_weight="1"
             android:background="@drawable/card"
-            android:backgroundTint="@color/red_800"
+            android:backgroundTint="#282d33"
             android:orientation="vertical">
 
             <TextView
@@ -37,34 +62,76 @@
                 android:layout_margin="8dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/appwidget_text"
-                android:text="@string/positif"
+                android:text="Terkonfirmasi"
                 android:textAlignment="center"
                 android:textColor="#ffffff"
-                android:textSize="22sp"
+                android:textSize="14sp"
                 android:textStyle="bold|italic" />
 
             <TextView
                 android:id="@+id/positif"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/appwidget_text"
                 android:text="..."
                 android:textAlignment="center"
-                android:textColor="#ffffff"
-                android:textSize="22sp"
+                android:textColor="#f2c94c"
+                android:textSize="25sp"
                 android:textStyle="bold" />
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="@dimen/spacing_small"
             android:layout_weight="1"
             android:background="@drawable/card"
-            android:backgroundTint="@color/teal_A700"
+            android:backgroundTint="#282d33"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/appwidget_text"
+                android:text="Dirawat"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/perawatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/appwidget_text"
+                android:text="..."
+                android:textAlignment="center"
+                android:textColor="#f5a623"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_small"
+            android:layout_weight="1"
+            android:background="@drawable/card"
+            android:backgroundTint="#282d33"
             android:orientation="vertical">
 
             <TextView
@@ -77,7 +144,7 @@
                 android:text="@string/sembuh"
                 android:textAlignment="center"
                 android:textColor="#ffffff"
-                android:textSize="22sp"
+                android:textSize="12sp"
                 android:textStyle="bold|italic" />
 
             <TextView
@@ -85,23 +152,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
                 android:layout_margin="8dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/appwidget_text"
                 android:text="..."
                 android:textAlignment="center"
-                android:textColor="#ffffff"
-                android:textSize="22sp"
+                android:textColor="#219653"
+                android:textSize="30sp"
                 android:textStyle="bold" />
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="@dimen/spacing_small"
             android:layout_weight="1"
             android:background="@drawable/card"
-            android:backgroundTint="@color/grey_900"
+            android:backgroundTint="#282d33"
             android:orientation="vertical">
 
             <TextView
@@ -114,7 +182,7 @@
                 android:text="@string/meninggal"
                 android:textAlignment="center"
                 android:textColor="#ffffff"
-                android:textSize="22sp"
+                android:textSize="12sp"
                 android:textStyle="bold|italic" />
 
             <TextView
@@ -122,24 +190,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
                 android:layout_margin="8dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/appwidget_text"
                 android:text="..."
                 android:textAlignment="center"
-                android:textColor="#ffffff"
-                android:textSize="22sp"
+                android:textColor="#d8232a"
+                android:textSize="30sp"
                 android:textStyle="bold" />
-        </LinearLayout>
+        </RelativeLayout>
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="By: Jack Electronics"
-        android:textAlignment="textEnd"
-        android:textColor="#ffffff"
-        android:textStyle="bold"/>
 
 </LinearLayout>
